@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Beajar ID</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="login-container">
+        <h2>Login Beajar ID</h2>
+        <form action="login.php" method="POST">
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required>
+            
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+            
+            <button type="submit">Login</button>
+        </form>
+        <style>
+            body {
+                background-color: aquamarine;
+                display: flex;
+                justify-content: center;
+                align-items:center ;
+                height: 100vh;
+                overflow: hidden;
+                margin: 0;
+            }
+            .moving-text {
+                font-size: 48px;
+                white-space: nowrap;
+                animation: move 10s linear infinite;
+            }
+            @keyframes move {
+                0% {
+                    transform: translate(100%);
+                }
+                50% {
+                    transform: translate(-100%);
+                }
+                100% {
+                    transform: translate(100%);
+                }
+            }
+        </style>
+        <div class="moving-text">SILAHKAN LOGIN </div>
+    </div>
+</body>
+</html>
